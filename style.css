@@ -1,0 +1,100 @@
+*{
+    margin: 0; /*espaçamento fora  do elemento*/
+    padding: 0; /* - espaçamento dentro do elemento - é uma propriedade que controla o espaçamento interno de um elemento em relação às suas bordas. Ele especifica a quantidade de espaço que deve ser deixado entre o conteúdo do elemento e suas bordas*/
+    box-sizing: border-box; /*modifica a maneira de exibir o tamnaho de uma caixa*/
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(82, 82, 82, 82);
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(241, 240, 240);
+}
+
+.card{
+    height: 22rem; /*altura*/
+    width:15rem; /*largura*/
+    display: flex; /* É para um (palavra, ícone, texto) ficar do lado do outro. os itens dentro desse container podem ser dispostos horizontalmente ou verticalmente, e você tem controle sobre como eles ocupam o espaço disponível. Algumas das principais funcionalidades e benefícios da utilização do display: flex; são: Organização dos itens, alinhamento, espaçamento, reorganização responsiva, controle indicvidual dos itens */
+    align-items: center; /*alinhar textos*/
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.8rem; /*arredondar as bordas*/
+    box-shadow: -0.1rem -0.1rem 0.3rem white, 0.1rem 0.1rem 0.3rem gray;
+}
+
+.profile-image{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.about{
+    align-items: center;
+}
+
+.social-icons{
+    margin: 1rem;
+}
+
+.fab{
+    height: 2rem;
+    width: 2rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+
+
+
+.img{
+    height: 6rem;
+    width: 6rem;
+    background-image: url(foto\ reduzida.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.contact-me{
+    background: none;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.fab:hover, .contact-me:hover{
+    box-shadow: inset -0.1rem -0.1rem 0.3rem white,
+    inset 0.1rem 0.1rem 0.3rem gray;
+    cursor: pointer;
+}
+
+/*block: hover { ---------- Quando estiver passando o mouse por cima
+    border: 2px solid red; ---- Deixa o card vemelho em volta
+
+}
+
+
+
+
+
+
+
+
+
+
